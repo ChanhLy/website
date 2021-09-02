@@ -27,10 +27,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     // Remove comment after tsconfig-paths-webpack-plugin support webpack 5
-    // "baseUrl": ".",
-    // "paths": {
-    //   "@components/*": ["src/components/*"]
-    // },
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["src/components/*"]
+    },
     "types": ["jest", "cypress"],
     "jsx": "preserve",
     "noEmit": true,
