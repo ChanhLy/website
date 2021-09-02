@@ -10,7 +10,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const { withSentryConfig } = require('@sentry/nextjs');
 
-const moduleExports = withBundleAnalyzer({
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
   poweredByHeader: false,
   trailingSlash: true,
   basePath: '',
@@ -18,7 +21,16 @@ const moduleExports = withBundleAnalyzer({
   // So, the source code is "basePath-ready".
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
-});
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.test.(tsx|ts)$/,
+      loader: 'ignore-loader',
+    });
+    return config;
+  },
+};
+
+const moduleExports = withBundleAnalyzer(nextConfig);
 
 const SentryWebpackPluginOptions = {
   // Additional config options for the Sentry Webpack plugin. Keep in mind that
