@@ -9,6 +9,7 @@
       }
     ]
   },
+  "root": true,
   "env": { "mocha": true, "jest": true, "jasmine": true },
   "globals": {
     "cy": true,
