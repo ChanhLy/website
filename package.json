@@ -12,7 +12,8 @@
     "clean": "rimraf .next out",
     "lint": "next lint",
     "build-types": "tsc --noEmit --pretty",
-    "test:watch": "jest --watch",
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
+    "test:watch": "jest --watch --json --outputFile=.jest-test-results.json",
     "test": "jest",
     "test:ci": "jest --ci",
     "cypress": "cypress open",
@@ -21,8 +22,9 @@
     "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --exit-zero-on-changes"
+    "prebuild:storybook": "yarn test:generate-output",
+    "build:storybook": "build-storybook",
+    "chromatic": "npx chromatic --exit-zero-on-changes buildScriptName=build:storybook"
   },
   "dependencies": {
     "@sentry/nextjs": "^6.11.0",
@@ -40,6 +42,7 @@
     "@next/eslint-plugin-next": "^11.1.2",
     "@storybook/addon-actions": "^6.4.0-alpha.33",
     "@storybook/addon-essentials": "^6.4.0-alpha.33",
+    "@storybook/addon-jest": "^6.4.0-alpha.33",
     "@storybook/addon-links": "^6.4.0-alpha.33",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-webpack5": "^6.4.0-alpha.33",

@@ -37,6 +37,14 @@ directories.forEach((directory) => {
         expect(await fileExists(testFileName)).toBeTruthy();
       });
 
+      it(`${component} component has story`, async () => {
+        const testFileName = `${__dirname}/${directory}/${component.replace(
+          '.tsx',
+          '.stories.tsx'
+        )}`;
+        expect(await fileExists(testFileName)).toBeTruthy();
+      });
+
       it(`${component} component has snapshots`, async () => {
         const testFileName = `${__dirname}/${directory}/__snapshots__/${component.replace(
           '.tsx',

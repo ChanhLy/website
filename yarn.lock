@@ -2165,6 +2165,22 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
+"@storybook/addon-jest@^6.4.0-alpha.33":
+  version "6.4.0-alpha.33"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-jest/-/addon-jest-6.4.0-alpha.33.tgz#6ac89cc1d460468ae8477abc2187753c1167b38d"
+  integrity sha512-7ezqeM80Rj1O6fkv/C++/lqg0U+MeVRPE6Wtqpyf/wDHRPAx3KxELFwIB5vGxGArBEJ+IzqjqZyBsYd5OjccKw==
+  dependencies:
+    "@storybook/addons" "6.4.0-alpha.33"
+    "@storybook/api" "6.4.0-alpha.33"
+    "@storybook/components" "6.4.0-alpha.33"
+    "@storybook/core-events" "6.4.0-alpha.33"
+    "@storybook/theming" "6.4.0-alpha.33"
+    core-js "^3.8.2"
+    global "^4.4.0"
+    react-sizeme "^3.0.1"
+    regenerator-runtime "^0.13.7"
+    upath "^1.2.0"
+
 "@storybook/addon-links@^6.4.0-alpha.33":
   version "6.4.0-alpha.33"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.4.0-alpha.33.tgz#5e9e7c3e5695a9ca3030fc2c5131418f24a9049d"
@@ -14133,7 +14149,7 @@ untildify@^4.0.0:
   resolved "https://registry.yarnpkg.com/untildify/-/untildify-4.0.0.tgz#2bc947b953652487e4600949fb091e3ae8cd919b"
   integrity sha512-KK8xQ1mkzZeg9inewmFVDNkg3l5LUhoq9kN6iWYB/CC9YMG8HA+c1Q8HwDe6dEX7kErrEVNVBO3fWsVq5iDgtw==
 
-upath@^1.1.1:
+upath@^1.1.1, upath@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz#8f66dbcd55a883acdae4408af8b035a5044c1894"
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==

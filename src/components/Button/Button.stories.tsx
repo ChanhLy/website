@@ -1,17 +1,23 @@
 import React from 'react';
 
+import { Meta, Story } from '@storybook/react';
+
 import { Button, ButtonProps } from './Button';
 
-const story = {
+const story: Meta = {
   title: 'Components/Button',
   component: Button,
 };
 
-export function RedButton(props: ButtonProps) {
+export const Default: Story = (props: ButtonProps) => {
   return <Button {...props}>Primary</Button>;
-}
-RedButton.args = {
-  className: 'text-red-300',
+};
+
+Default.args = {
+  children: 'text-red-300',
+};
+Default.parameters = {
+  jest: ['Button.test.tsx'],
 };
 
 export default story;
