@@ -10,12 +10,11 @@ const story: Meta = {
 };
 
 export const Default: Story = (props: ButtonProps) => {
-  return <Button {...props}>Primary</Button>;
+  return <Button {...props}>Default</Button>;
 };
 
-Default.args = {
-  children: 'text-red-300',
-};
+Default.args = {};
+
 Default.parameters = {
   jest: ['Button.test.tsx'],
 };

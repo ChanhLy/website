@@ -1,8 +1,9 @@
-import React, { ButtonHTMLAttributes } from 'react';
+export interface ButtonProps {
+  className?: string;
+  onClick?: () => void;
+}
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
-
-export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
+export const Button: React.FC<ButtonProps> = (props) => {
   return (
     <button type="button" {...props}>
       {props.children}
