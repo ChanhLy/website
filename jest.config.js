@@ -17,12 +17,14 @@ module.exports = {
     '^.+\\.(jpg|jpeg|png|gif|webp|svg)$': `<rootDir>/__mocks__/fileMock.js`,
 
     '^@/components/(.*)$': '<rootDir>/src/components/$1',
+    '^@/images/(.*)$': '<rootDir>/public/assets/images/$1',
   },
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
     '<rootDir>/.next/',
     '<rootDir>/cypress/',
   ],
+  modulePathIgnorePatterns: ['node_modules', 'jest-test-results.json'],
   transform: {
     // Use babel-jest to transpile tests with the next/babel preset
     // https://jestjs.io/docs/configuration#transform-objectstring-pathtotransformer--pathtotransformer-object

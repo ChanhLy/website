@@ -20,6 +20,7 @@ module.exports = {
       },
     },
     '@storybook/addon-jest',
+    // 'storybook-addon-next-router',
   ],
   webpackFinal: async (config) => {
     config.resolve.plugins?.push(new TsconfigPathsPlugin({}));

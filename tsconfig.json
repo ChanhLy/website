@@ -29,7 +29,8 @@
     // Remove comment after tsconfig-paths-webpack-plugin support webpack 5
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["src/components/*"]
+      "@/components/*": ["src/components/*"],
+      "@/images/*": ["public/assets/images/*"]
     },
     "types": ["jest", "cypress"],
     "jsx": "preserve",

@@ -2,9 +2,9 @@ import React from 'react';
 
 import renderer from 'react-test-renderer';
 
-import { Button } from '@/components/Button/Button';
+import { Header } from './Header';
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Button>Button</Button>).toJSON();
+  const tree = renderer.create(<Header></Header>).toJSON();
   expect(tree).toMatchSnapshot();
 });
