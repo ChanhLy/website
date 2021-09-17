@@ -11,7 +11,7 @@ const Index = () => {
         />
       }
     >
-      Hello
+      Hello word
     </Main>
   );
 };
