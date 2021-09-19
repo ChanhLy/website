@@ -1,6 +1,10 @@
 {
   // Configuration for JavaScript files
-  "extends": ["airbnb-base", "plugin:prettier/recommended", "plugin:@next/next/recommended"],
+  "extends": [
+    "airbnb-base",
+    "plugin:prettier/recommended"
+    // "plugin:@next/next/recommended"
+  ],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -28,11 +32,13 @@
       "parserOptions": {
         "project": "./tsconfig.json"
       },
+
       "rules": {
         "prettier/prettier": [
           "error",
           {
-            "singleQuote": true
+            "singleQuote": true,
+            "endOfLine": "auto"
           }
         ],
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
@@ -65,10 +71,17 @@
         "import/no-extraneous-dependencies": [
           "error",
           {
-            "devDependencies": ["**/*.test.ts", "**/*.test.tsx", "**/*.stories.tsx"]
+            "devDependencies": [
+              "**/*.test.ts",
+              "**/*.test.tsx",
+              "**/*.stories.tsx"
+            ]
           }
         ],
-        "unused-imports/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+        "unused-imports/no-unused-vars": [
+          "error",
+          { "argsIgnorePattern": "^_" }
+        ]
       }
     }
   ]

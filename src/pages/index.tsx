@@ -1,5 +1,6 @@
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
+import { Home } from '@/components/Home/Home';
 
 const Index = () => {
   return (
@@ -11,7 +12,7 @@ const Index = () => {
         />
       }
     >
-      Hello
+      <Home></Home>
     </Main>
   );
 };
