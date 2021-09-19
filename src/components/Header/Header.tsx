@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface HeaderProps {
   className?: string;
 }
@@ -28,16 +30,6 @@ export const Header: React.FC<HeaderProps> = (props) => {
         </div>
       </div>
 
-      <div className="block text-center my-7">
-        <h1 className="text-5xl font-bold">The modern landing page for</h1>
-        <h1 className="text-3xl my-7 font-bold">React developer</h1>
-        <p className="my-7">
-          The easiest way to build React landing page in seconds
-        </p>
-        <button className="bg-blue-400 text-xl p-5 text-white font-bold rounded-md">
-          Start your 14-day Free Trial
-        </button>
-      </div>
       {/* <Image src={logo} alt="logo" width="16" height="16"></Image> */}
     </header>
   );

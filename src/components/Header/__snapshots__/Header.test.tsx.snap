@@ -3,7 +3,53 @@
 exports[`renders correctly 1`] = `
 <header
   className="w-full p-2 bg-blue-400"
+  style={
+    Object {
+      "backgroundColor": "#EFF6FF",
+    }
+  }
 >
-  a
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-around",
+      }
+    }
+  >
+    <div>
+      <h1>
+        LOGO
+      </h1>
+    </div>
+    <div
+      className="flex"
+    >
+      <h4
+        className="p-2 font-bold"
+      >
+        Docs
+      </h4>
+      <h4
+        className="p-2  font-bold"
+      >
+        Blog
+      </h4>
+      <h4
+        className="p-2 font-bold"
+      >
+        Sign in
+      </h4>
+      <div
+        className=""
+      >
+        <button
+          className="bg-blue-400 rounded-md p-2 text-white font-bold rounded-t-md"
+        >
+          Start Free Trial
+        </button>
+      </div>
+    </div>
+  </div>
 </header>
 `;

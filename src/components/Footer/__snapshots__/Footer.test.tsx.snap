@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className=" bg-gray-300 w-full	h-56 text-center "
+>
+  <div
+    className="flex justify-around p-8	"
+  >
+    <div>
+      <h1
+        className="rounded-2xl"
+      >
+        LOGO
+      </h1>
+    </div>
+    <div>
+      <ul>
+        <li
+          className="font-bold"
+        >
+          Products
+        </li>
+        <li>
+          1 link
+        </li>
+        <li>
+          2 link
+        </li>
+        <li>
+          3 link
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li
+          className="font-bold"
+        >
+          Resources
+        </li>
+        <li>
+          1 link
+        </li>
+        <li>
+          2 link
+        </li>
+        <li>
+          3 link
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li
+          className="font-bold"
+        >
+          Contact
+        </li>
+        <li>
+          1 link
+        </li>
+        <li>
+          2 link
+        </li>
+        <li>
+          3 link
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li
+          className="font-bold"
+        >
+          Legal
+        </li>
+        <li>
+          1 link
+        </li>
+        <li>
+          2 link
+        </li>
+        <li>
+          3 link
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="my-7"
+  >
+    © Copyright 
+    2021
+     . Powered with
+     
+    <span
+      aria-label="Love"
+      role="img"
+    >
+      ♥
+    </span>
+     
+    by 
+    <a
+      href="https://creativedesignsguru.com"
+    >
+      CreativeDesignsGuru
+    </a>
+  </div>
+</div>
+`;
